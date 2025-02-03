@@ -170,6 +170,7 @@ const techDocsEntityContent = EntityContentBlueprint.makeWithOverrides({
       {
         defaultPath: 'docs',
         defaultTitle: 'TechDocs',
+        defaultGroup: 'documentation',
         routeRef: convertLegacyRouteRef(rootCatalogDocsRouteRef),
         loader: () =>
           import('./Router').then(({ EmbeddedDocsRouter }) =>

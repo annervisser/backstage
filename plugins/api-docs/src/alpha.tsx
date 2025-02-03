@@ -210,6 +210,7 @@ const apiDocsApisEntityContent = EntityContentBlueprint.make({
   params: {
     defaultPath: '/apis',
     defaultTitle: 'APIs',
+    defaultGroup: 'documentation',
     filter: 'kind:component',
     loader: async () =>
       import('./components/ApisCards').then(m =>
